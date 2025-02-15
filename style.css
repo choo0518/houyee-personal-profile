@@ -1,0 +1,36 @@
+#feature-img {
+    width: 80%;  /* Makes the image take up 100% of its container's width */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: contain;  /* Ensures the image is contained within its box without stretching */
+}
+
+@media (max-width: 768px) {
+    #feature-img {
+        max-width: 80%; /* Limits the max width on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    #feature-img {
+        max-width: 100%; /* Makes the image take up the full width on very small screens */
+    }
+}
+
+#feature-img-2 {
+    width: 15%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing */
+    padding-bottom: 25px;
+}
+
+.separator-line {
+    width: 100px;
+    height: 5px;
+    background: #f39c12;
+    margin: 10px auto;
+    animation: expand 2s infinite alternate;
+}
+@keyframes expand {
+    from { width: 10%%; }
+    to { width: 30%; }
+}
