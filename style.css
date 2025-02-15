@@ -6,18 +6,12 @@
 
 @media (max-width: 768px) {
     #feature-img {
-        max-width: 80%; /* Limits the max width on smaller screens */
-    }
-}
-
-@media (max-width: 576px) {
-    #feature-img {
-        max-width: 100%; /* Makes the image take up the full width on very small screens */
+        max-width: 20%; /* Limits the max width on smaller screens */
     }
 }
 
 #feature-img-2 {
-    width: 15%; /* Adjust as needed */
+    width: 20%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove any extra spacing */
     padding-bottom: 25px;
@@ -31,6 +25,6 @@
     animation: expand 2s infinite alternate;
 }
 @keyframes expand {
-    from { width: 10%%; }
+    from { width: 10%; }
     to { width: 30%; }
 }
